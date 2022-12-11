@@ -1,0 +1,86 @@
+:root {
+  --default-color: #8893af;
+  --first-accent-color: #64ffda;
+  --second-accent-color: #ccd7f5;
+  --default-font-family: "Manrope", sans-serif;
+  --accent-font-family: "Fira Mono", monospace;
+}
+body {
+  background-color: #0a192e;
+  font-family: var(--default-font-family);
+  color: var(--default-color);
+}
+h1 {
+  font-size: 86px;
+  font-weight: 900;
+  color: var(--second-accent-color);
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.hero p {
+  color: var(--first-accent-color);
+  font-family: var(--accent-font-family);
+}
+.hero-motto h4 {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 480px;
+  margin-top: 20px;
+}
+.main-container {
+  max-width: 1600px;
+  display: block;
+  padding: 0 300px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.btn-custom {
+  padding: 17px 42px;
+  border: 1px solid var(--first-accent-color);
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--first-accent-color);
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .main-container {
+    padding: 0 150px;
+    min-height: 90vh;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 80px;
+  }
+  h1 {
+    font-size: 76px;
+  }
+}
+@media (max-width: 576px) {
+  .main-container {
+    padding: 0 100px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
