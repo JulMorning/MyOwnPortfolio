@@ -1,0 +1,342 @@
+:root {
+  --background-color: #0a192e;
+  --default-color: #8893af;
+  --first-accent-color: #64ffda;
+  --second-accent-color: #ccd7f5;
+  --default-font-family: "Manrope", sans-serif;
+  --accent-font-family: "Fira Mono", monospace;
+}
+body {
+  background-color: var(--background-color);
+  font-family: var(--default-font-family);
+  color: var(--default-color);
+}
+h1 {
+  font-size: 86px;
+  font-weight: 900;
+  color: var(--second-accent-color);
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--second-accent-color);
+}
+h4 {
+  font-size: 22px;
+  color: var(--second-accent-color);
+}
+h5 {
+  color: var(--first-accent-color);
+  font-family: var(--accent-font-family);
+  font-size: 16px;
+  font-weight: 100;
+}
+p {
+  font-size: 18px;
+}
+.header {
+  margin: 0 25px;
+  padding: 30px;
+  background-color: var(--background-color);
+}
+.menu-number {
+  color: var(--first-accent-color);
+  font-size: 14px;
+  font-weight: 100;
+  font-family: var(--accent-font-family);
+}
+.logo {
+  max-height: 40px;
+}
+.mobile-nav-toggle {
+  display: none;
+}
+.primary-navigation li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 30px;
+}
+.primary-navigation a {
+  text-decoration: none;
+  color: var(--default-color);
+  font-size: 14px;
+  transition: all 150ms ease-in-out;
+}
+.primary-navigation a:hover {
+  color: var(--first-accent-color);
+}
+.left-side-styled-element,
+.right-side-styled-element {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  color: var(--default-color);
+}
+.left-side-styled-element {
+  left: 0;
+  margin-left: 40px;
+}
+.right-side-styled-element {
+  right: 0;
+  margin-right: 40px;
+}
+.email-styled-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.email-styled-link-wrapper a {
+  margin: 20px auto;
+  padding: 10px;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  color: var(--default-color);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  color: var(--default-color);
+}
+.social-media li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 4px;
+  transition: all 100ms ease-in-out;
+  color: var(--default-color);
+}
+.social-media li a:hover {
+  color: var(--first-accent-color);
+}
+
+.social-media::after,
+.email-styled-link-wrapper::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 90px;
+  margin: 20px auto 0px;
+  background-color: var(--default-color);
+}
+
+.about-project-text,
+.about-me-text {
+  font-size: 18px;
+}
+
+.hero-motto h4 {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 480px;
+  margin-top: 20px;
+}
+.main-container {
+  max-width: 1600px;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  padding: 0 200px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.btn-custom {
+  padding: 17px 42px;
+  border: 1px solid var(--first-accent-color);
+  background-color: transparent;
+  font-size: 14px;
+  color: var(--first-accent-color);
+  margin-top: 50px;
+  transition: all 200ms ease-in-out;
+  font-family: var(--accent-font-family);
+}
+.btn-custom:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: var(--first-accent-color);
+  border: 1px solid var(--first-accent-color);
+}
+.project-details,
+.about-me-content {
+  padding-left: 100px;
+}
+.projects-section h3 {
+  color: var(--second-accent-color);
+}
+.projects-section h4 {
+  color: var(--second-accent-color);
+}
+.skills-description {
+  font-family: var(--accent-font-family);
+  margin-top: 30px;
+}
+.skill-text-color {
+  color: var(--first-accent-color);
+}
+.row {
+  margin-top: 100px;
+}
+
+.about-me-content {
+  padding: 30px;
+  margin-left: 30px;
+}
+.heading {
+  margin-bottom: 100px;
+}
+.numbered-heading {
+  color: var(--first-accent-color);
+  font-family: var(--accent-font-family);
+  font-size: smaller;
+}
+.contact-section {
+  max-width: 600px;
+  margin: 0px auto 100px;
+  text-align: center;
+  padding: 100px 0;
+}
+.contact-section h1 {
+  font-size: 60px;
+}
+footer {
+  margin: 100px auto 20px;
+}
+.footer-text p {
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .main-container {
+    padding: 0 150px;
+    min-height: 90vh;
+  }
+  .project-details {
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 80px;
+    min-height: 70vh;
+  }
+  h1 {
+    font-size: 76px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  .about-me-section {
+    text-align: center;
+  }
+  .own-photo {
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  .main-container {
+    padding: 0 50px;
+    min-height: 50vh;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .about-project-text,
+  .about-me-text,
+  .skills-description {
+    font-size: 16px;
+  }
+  .left-side-styled-element,
+  .right-side-styled-element {
+    display: none;
+  }
+  .heading {
+    margin-bottom: 20px;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    color: var(--default-color);
+  }
+  .header {
+    margin: 0 10px;
+    padding: 10px;
+  }
+  .logo {
+    max-height: 30px;
+  }
+
+  .primary-navigation {
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: min(30vh, 10rem) 2em;
+    background: #233554;
+  }
+  .primary-navigation a {
+    font-size: 20px;
+    line-height: 60px;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background: url("images/hamburger-open.svg");
+    background-repeat: no-repeat;
+    width: 2rem;
+    border: 0;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+}
