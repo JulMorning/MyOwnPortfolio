@@ -259,9 +259,17 @@ footer {
 }
 @media (max-width: 768px) {
   .main-container {
-    padding: 0 80px;
+    padding: 0 90px;
     min-height: 70vh;
   }
+.left-side-styled-element {
+  left: 0;
+  margin-left: 10px;
+}
+.right-side-styled-element {
+  right: 0;
+  margin-right: 10px;
+}
   h1 {
     font-size: 76px;
   }
