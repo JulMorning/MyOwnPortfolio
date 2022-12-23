@@ -216,7 +216,7 @@ p {
 }
 .contact-section {
   max-width: 600px;
-  margin: 0px auto 100px;
+  margin: 0px auto 40px;
   text-align: center;
   padding: 100px 0;
 }
@@ -224,7 +224,7 @@ p {
   font-size: 60px;
 }
 footer {
-  margin: 100px auto 20px;
+  margin: 40px auto 20px;
 }
 .footer-text p {
   font-family: var(--accent-font-family);
@@ -236,7 +236,7 @@ footer {
   display: none;
   justify-content: space-between;
   list-style: none;
-  margin: 20px;
+  margin: 0 20px;
   padding: 10px;
 }
 .social-media-footer li a {
