@@ -125,8 +125,10 @@ p {
   transition: all 100ms ease-in-out;
   color: var(--default-color);
 }
-.social-media li a:hover {
+.social-media li a:hover,
+.email-styled-link-wrapper a:hover {
   color: var(--first-accent-color);
+  transform: scale(1.2);
 }
 
 .social-media::after,
@@ -346,4 +348,8 @@ footer {
   .mobile-nav-toggle[aria-expanded="true"] {
     background-image: url("images/hamburger-close.svg");
   }
+  .footer-text p {
+    font-size: 10px;
+  }
+
 }
